@@ -17,12 +17,12 @@ document.addEventListener('DOMContentLoaded', () => {
         .then( response => {
             console.log(response.status)
             if (response.status === 200) {
-                console.log(response)
                 response.json()
+            } else if(response.status === 400){
+                console.error('A url não foi encontrada!')
             }
         })
         .then(data => {
-            console.log(data)
             alert(`Success: ${JSON.stringify(data)}`)
         })
         .catch(error => {

@@ -6,6 +6,9 @@
     box-sizing: border-box;
     font-family: Archivo;
 }
+body{
+    background-color: #F0F0F4;
+}
 header{
     padding-top: 184px;
     padding-bottom: 19px;
@@ -36,12 +39,24 @@ p{
 }
 form{
     margin-top: -64px !important;
-    padding: 64px;
     background-color: #FAFAFC;
+}
+fieldset{
+    padding: 64px;
+    padding-top: 0;
+    border: none;
+}
+fieldset:last-child{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #F0F0F4;
 }
 legend{
     margin-bottom: 24px;
+    padding-top: 64px;
     padding-bottom: 16px;
+    margin-left: 64px;
+    margin-right: 64px;
     border-bottom: 1px solid #E6E6F0;
     font-family: Archivo;
     font-size: 24px;
@@ -72,6 +87,9 @@ textarea{
     height: 168px;
     border-radius: 8px;
     border: 1px solid #E6E6F0;
+}
+.form-group:last-child{
+    margin-bottom: 0;
 }
 .form-group.btn{
     background: #F0F0F4;

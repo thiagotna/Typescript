@@ -15,12 +15,19 @@ document.addEventListener('DOMContentLoaded', () => {
             body: JSON.stringify(data)
         })
         .then( response => {
+            console.log(response.status)
             if (response.status === 200) {
+                console.log(response)
                 response.json()
             }
         })
-        .then(data => alert(`Success: ${JSON.stringify(data)}`))
-        .catch(error => console.error(''))
+        .then(data => {
+            console.log(data)
+            alert(`Success: ${JSON.stringify(data)}`)
+        })
+        .catch(error => {
+            console.error(error)
+        })
     }
 
     if (form instanceof HTMLFormElement) {

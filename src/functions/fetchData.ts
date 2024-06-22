@@ -1,6 +1,6 @@
 import Data from "../interfaces/Data"
 
-const fetchData = async (url: string, data: Data) => {
+const fetchData = async (url: string, data: Data): Promise<void> => {
     await fetch(url, { 
         method: 'POST',
         headers:{
